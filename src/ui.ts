@@ -14,7 +14,7 @@ export function mountUI(root: HTMLElement) {
     <div class="workspace">
       <aside class="control-panel">
         <div class="panel-title"><span class="eyebrow">POSTAVKE POKUSA</span><span class="step-dot">01</span></div>
-        <label class="field-label">Intenzitet dolazaka</label><div class="segmented traffic" role="group" aria-label="Intenzitet prometa"><button data-preset="quiet">Mirno</button><button data-preset="normal" class="selected">Normalno</button><button data-preset="rush">Špica</button></div><p id="arrival-label" class="field-help">Jedan kupac svakih 6–20 sekundi</p>
+        <label class="field-label">Intenzitet dolazaka</label><div class="segmented traffic" role="group" aria-label="Intenzitet prometa"><button data-preset="quiet">Mirno</button><button data-preset="normal">Normalno</button><button data-preset="rush" class="selected">Špica</button></div><p id="arrival-label" class="field-help">Jedan kupac svakih 2–8 sekundi</p>
         <div class="field-row"><label for="lanes">Blagajne po sustavu</label><select id="lanes">${[1,2,3,4].map(n=>`<option ${n===4?'selected':''}>${n}</option>`).join('')}</select></div>
         <div class="field-row"><label for="stations">Stanice za pakiranje <small>Tunelska blagajna</small></label><select id="stations">${[1,2,3,4].map(n=>`<option ${n===3?'selected':''}>${n}</option>`).join('')}</select></div>
         <div class="field-row"><label for="duration">Trajanje dolazaka</label><select id="duration"><option value="300">5 min</option><option value="600" selected>10 min</option><option value="1200">20 min</option></select></div>

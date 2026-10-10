@@ -13,7 +13,7 @@ let sim=new Simulation(config);
 let scene:CheckoutScene;
 let snapshot=sim.snapshot();
 let horizon:SimulationSnapshot|null=null;
-let playing=true, speed=1, preset:TrafficPreset='normal';
+let playing=true, speed=1, preset:TrafficPreset='rush';
 let selected:{zone:ZoneId;lane:number}|null=null;
 let lastFrame=performance.now(),lastUI=0,lastChartSample=-1;
 let toastTimer:ReturnType<typeof setTimeout>;
