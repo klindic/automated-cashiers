@@ -1,6 +1,12 @@
 # Checkout Lab
 
-Lokalna 3D simulacija tunelskih i klasičnih blagajni. Izgrađena u Babylon.js i TypeScriptu, s izvornim Blender modelom tunela.
+Interaktivna 3D simulacija tunelskih i klasičnih blagajni. Izgrađena u Babylon.js i TypeScriptu, s izvornim Blender modelom tunela.
+
+## Objavljena simulacija
+
+[Otvori Checkout Lab na GitHub Pages](https://klindic.github.io/automated-cashiers/).
+
+Svaki push na `main` pokreće testove, produkcijski build i objavu kroz GitHub Actions. Postavke Pages koriste izvor **GitHub Actions**. Za lokalnu provjeru istog builda pokreni `npm run build:pages`, zatim `npm run preview -- --host 127.0.0.1` i otvori `/automated-cashiers/`.
 
 ## Pokretanje
 

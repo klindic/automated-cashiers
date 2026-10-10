@@ -8,7 +8,7 @@ export const icons = {
 };
 export function mountUI(root: HTMLElement) {
   root.innerHTML = `
-  <header class="app-header"><a class="brand" href="/" aria-label="Checkout Lab početna"><span class="brand-icon"><i></i><i></i><i></i></span><span>checkout<span class="brand-light">lab</span><small>SIMULACIJA TOKA KUPACA</small></span></a><div class="header-meta"><span class="version">PROTOTIP 01</span><span class="live-badge"><i></i> LOKALNI POKUS</span></div></header>
+  <header class="app-header"><a class="brand" href="${import.meta.env.BASE_URL}" aria-label="Checkout Lab početna"><span class="brand-icon"><i></i><i></i><i></i></span><span>checkout<span class="brand-light">lab</span><small>SIMULACIJA TOKA KUPACA</small></span></a><div class="header-meta"><span class="version">PROTOTIP 01</span><span class="live-badge"><i></i> LOKALNI POKUS</span></div></header>
   <main>
     <div class="page-heading"><div><span class="eyebrow">USPOREDBA SUSTAVA / 3D</span><h1>Bolji protok počinje ovdje.</h1><p>Isti kupci. Dva sustava. Rezultati koje možeš istražiti.</p></div><div class="export-wrap"><button id="export-toggle" class="button secondary">${icons.export} Izvoz podataka</button><div id="export-menu" class="export-menu" hidden><button id="export-customers">Kupci · CSV</button><button id="export-samples">Vremenski uzorci · CSV</button></div></div></div>
     <div class="workspace">

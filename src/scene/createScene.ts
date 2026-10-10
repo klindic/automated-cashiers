@@ -137,7 +137,7 @@ export function createCheckoutScene(canvas: HTMLCanvasElement, config: Simulatio
     }
   }
   // Original Blender GLB replaces each procedural emergency fallback once loaded.
-  ImportMeshAsync('/models/checkout-tunnel.glb',scene).then(result=>{
+  ImportMeshAsync(`${import.meta.env.BASE_URL}models/checkout-tunnel.glb`,scene).then(result=>{
     if(disposed) return;
     const original=result.meshes[0]; original.setEnabled(false);
     for(let lane=0;lane<config.numLanes;lane++) {
